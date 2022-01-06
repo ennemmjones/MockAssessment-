@@ -1,0 +1,24 @@
+
+
+  <div class="container">
+    <table class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Product ID</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of allProducts">
+                <td>{{item.name}}</td>
+                <td>{{item.productID}}</td>
+                <td>${{item.price}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+  
+  <p>Total Products in Inventory: {{allProducts.length}}</p>
